@@ -28,3 +28,32 @@
     justify-content: space-between;
     color: rgba(0,0,0,0.5);
 }
+
+/* 요건 숨길때 쓸 수 있는 css 코드이긴 한데 
+엘리멘트가 남아 있어서 잘 안씀 
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+*/
+
+
+#splash-screen {
+    background-color: var(--yellow);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+/*    animation: hideSplashScreen 1s ease-in-out forwards;
+      animation-delay: 2s;
+ forwords 는 에니매이션 끝을 유지하기 위함*/
+}
